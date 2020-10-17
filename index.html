@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+      <div class="weather">
+        <form id="city-form">
+          <input type="text" id="city-input" class="city-input" placeholder="Enter your city" autocomplete="off">
+          <input type="submit" value="Search" class="search-button" >
+        </form>
+        <button
+        id="current-location-button"
+        class="button"
+      >
+        Current
+      </button>
+        <h1>Gent, Belgium</h1>
+        <ul>
+          <li id="date">
+            Monday, 21/09/2020
+          </li>
+          <li id="weather-description">
+            ##
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+              
+            <span class="temperature" id="temperature">
+              19
+            </span> 
+              <span class="tempvalue" >
+                °C 
+              </span>
+          </div>
+          <div class="col-6">
+           <div>
+              Humidity: 
+              <span id="humidity">
+                ## 
+              </span>
+              %
+          </div>
+           <div> 
+             Wind: 
+             <span id="wind">
+               ##
+             </span>
+              km/h
+            </div>
+          </div>
+          
+        <div class="forecast"> 
+      <div class="row">
+    <div class="col-4">
+      Tomorrow
+    </br>
+    25°/11°
+  </br>
+  🌤
+    </div>
+    <div class="col-4">
+      Wednesday
+      </br>
+    21°/12°
+  </br>
+  🌦
+    </div>
+    <div class="col-4">
+      Thursday
+      </br>
+    18°/8°
+  </br>
+  🌧
+    </div>
+    </div>
+        </div>
+        </div>
+        </div>
+    </div> 
+    <script src="src/index.js"></script>
+</body>
+</html>
