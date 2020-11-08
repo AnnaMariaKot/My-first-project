@@ -45,12 +45,21 @@ function displayTemperature(response) {
         "alt", response.data.weather[0].description
     )
 }
+
+function search(city) {
+    let apiKey = "34f1c513b53f57aa71f2dd7697c02049"
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+    axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault()
+    let cityInputElement = document.querySelector("#city-input")
+    search(cityInputElement.value);
+}
    
 
+search("Gent")
 
-
-let apiKey = "34f1c513b53f57aa71f2dd7697c02049"
-let city = "Ledeberg"
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-
-    axios.get(apiUrl).then(displayTemperature);
+let form = document.querySelector("#search-form")
+form.addEventListener("submit", handleSubmit);
