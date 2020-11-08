@@ -34,9 +34,16 @@ li {
   line-height: 1;
   list-style: none;
   text-align: center;
+}
+li:first-letter {
   text-transform: capitalize;
 }
 footer {
   text-align: center;
   font-size: 15px;
+}
+p {
+  color: black;
+  font-size: 30px;
+  display: inline;
 }
