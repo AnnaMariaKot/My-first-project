@@ -53,11 +53,14 @@ p {
 }
 .row {
   text-align: center;
+  margin-bottom: 10px;
 }
 .weather-icon {
-  max-width: 50px;
+  max-width: 70px;
   margin: 0 auto;
   display: block;
+  position: relative;
+  top: -25px;
 }
 .search-form {
   display: inline-block;
@@ -78,4 +81,16 @@ p .active {
 }
 p .active:hover {
   cursor: default;
+}
+
+.humidity {
+  color: #7046aa;
+  margin-top: 0;
+  position: relative;
+  top: -36px;
+}
+.windspeed {
+  color: #7046aa;
+  position: relative;
+  top: -25px;
 }
