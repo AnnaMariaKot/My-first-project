@@ -72,3 +72,10 @@ p {
   border-radius: 7px;
   padding: 7px;
 }
+p .active {
+  color: black;
+  text-decoration: none;
+}
+p .active:hover {
+  cursor: default;
+}
