@@ -4,16 +4,7 @@
   margin: 30px auto;
   max-width: 400px;
   text-align: center;
-  background-image: linear-gradient(
-    to top,
-    #fcc5e4 0%,
-    #fda34b 15%,
-    #ff7882 35%,
-    #c8699e 52%,
-    #7046aa 71%,
-    #0c1db8 87%,
-    #020f75 100%
-  );
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
 }
 h1 {
   text-align: center;
@@ -23,6 +14,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 50px;
+  color: white;
 }
 ul {
   margin: 0 0 20px;
@@ -47,6 +39,7 @@ footer {
 
 .units {
   text-align: center;
+  color: white;
 }
 p {
   text-align: center;
@@ -70,13 +63,17 @@ p {
   margin: 15px;
   border-radius: 5px;
   padding: 7px;
+  background-color: #b9c7e0;
 }
 .button {
   border-radius: 7px;
   padding: 7px;
+  background-color: #b9c7e0;
+  color: white;
+  font-weight: bold;
 }
 p .active {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 p .active:hover {
@@ -84,13 +81,19 @@ p .active:hover {
 }
 
 .humidity {
-  color: #7046aa;
+  color: white;
   margin-top: 0;
   position: relative;
   top: -36px;
 }
 .windspeed {
-  color: #7046aa;
+  color: white;
   position: relative;
   top: -25px;
+}
+.date {
+  color: white;
+}
+.description {
+  color: white;
 }
