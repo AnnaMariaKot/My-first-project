@@ -2,7 +2,8 @@
   border: 1px solid;
   border-radius: 15px;
   margin: 30px auto;
-  max-width: 500px;
+  max-width: 400px;
+  text-align: center;
   background-image: linear-gradient(
     to top,
     #fcc5e4 0%,
@@ -57,4 +58,17 @@ p {
   max-width: 50px;
   margin: 0 auto;
   display: block;
+}
+.search-form {
+  display: inline-block;
+  margin: 15px;
+}
+.city-input {
+  margin: 15px;
+  border-radius: 5px;
+  padding: 7px;
+}
+.button {
+  border-radius: 7px;
+  padding: 7px;
 }
